@@ -14,7 +14,14 @@ def montar_tabuleiro():
                 tabuleiro[l][c] = pecas_pretas[8]
             elif l == 7:
                 tabuleiro[l][c] = pecas_pretas[c]
+
+montar_tabuleiro()
+
+
+def visualizacao():
+    for l in range(8):
+        for c in range(8):
             print(f"[{tabuleiro[l][c]}]", end="")
         print()
 
-montar_tabuleiro()
+visualizacao()
