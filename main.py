@@ -1,6 +1,7 @@
 tabuleiro = [["   " for j in range(8)]for i in range(8)]
 pecas_brancas = [' T ',' C ','>B ',' D ',' R ',' B<',' C ',' T ',' P ']
 pecas_pretas = [' t ',' c ','>b ',' d ',' r ',' b<',' c ',' t ',' p ']
+jogador = 2
 
 def montar_tabuleiro():
     for l in range(8):
@@ -25,3 +26,49 @@ def visualizacao():
         print()
 
 visualizacao()
+
+while True:
+    if jogador % 2 == 0:
+
+        l = input("Qual a linha da peça que deseja mexer:")
+        c = input("Qual a coluna da peça que deseja mexer:")
+        destinoL = input("Qual a linha que deseja enviar a peça:")
+        destinoC = input("Qual a coluna que deseja enviar a peça:")
+
+        if (condicao) == 1:
+            tabuleiro[destinoL][destinoC] = tabuleiro[l][c]
+            tabuleiro[l][c] = "   "
+            jogador = + 1
+            
+        else:
+            print("Jogada invalida")
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
